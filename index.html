@@ -394,7 +394,89 @@
           </li>
         </ul>
       </div>
+
+      <div class="mail-input-div">
+        <p class="social-media-footer-text mail-input-text">Subscribe</p>
+        <form class="mail-input-form">
+          <label for="mail-input"></label>
+          <input type="mail" class="mail-input" id="mail-input" placeholder="E-mail">
+          <button class="mail-input-btn">Telegram <svg class="telegram-icon" width="24" height="20">
+            <use href="./images/icons.svg#icon-icon-send"></use>
+          </svg>
+          </button>
+        </form>
+      </div>
+
     </div>
  </footer>
+
+ <div class="backdrop">
+  <div class="modal">
+    <button class="modal-button" type="button">
+      <svg class="btn-icon" width="8" height="8">
+      <use href="./images/icons.svg#icon-x-close"></use>
+    </svg>
+    </button>
+
+    <p class="modal-text">Leave your contacts and we will call you back</p>
+
+    <form class="form">
+
+      <div class="input-wrapper">
+        <label class="label" for="name-input">Name</label>
+        <div class="input-div">
+          <input type="text" class="input" id="name-input" name="user-name">
+          <svg class="input-icon" width="12" height="12">
+            <use href="./images/icons.svg#icon-name"></use>
+          </svg>
+        </div>
+      </div>
+
+      <div class="input-wrapper">
+        <label class="label" for="phone-input">Phone</label>
+        <div class="input-div">
+          <input type="tel" class="input" id="phone-input" name="user-phone">
+          <svg class="input-icon" width="13" height="13">
+            <use href="./images/icons.svg#icon-phone"></use>
+          </svg>
+        </div>
+      </div>
+
+      <div class="input-wrapper">
+        <label class="label" for="email-mail">Email</label>
+        <div class="input-div">
+          <input type="mail" class="input" id="email-input" name="user-email">
+          <svg class="input-icon" width="15" height="12">
+            <use href="./images/icons.svg#icon-mail"></use>
+          </svg>
+        </div>
+      </div>
+
+      <div class="input-wrapper">
+        <label class="label" for="comment-textarea">Comment</label>
+        <textarea name="comment" id="comment-textarea" class="textarea" placeholder="Text input"></textarea>
+      </div>
+
+      <div class="checkbox">
+        <input type="checkbox" name="checkbox-input" id="checkbox-input" class="check-input visually-hidden">
+        <label for="checkbox-input" class="label-checkbox">
+          <span class="custom-checkbox">
+            <svg class="icon-check" width="10" height="8">
+              <use href="./images/icons.svg#icon-checkbox"></use>
+            </svg>
+          </span>
+        I accept the terms and conditions of the 
+        <a href="#" class="checkbox-link">Privacy Policy</a>
+      </label>
+    </div>
+
+    <button type="submit" class="button">Send
+    </button>
+
+    </form>
+  </div>
+ </div>
+
+ <script src="./js/modal.js"></script>
 </body>
 </html>
